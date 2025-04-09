@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="converter-container">
+      <div class="logo">
+        <svg
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="30" cy="30" r="30" fill="#4A90E2" />
+          <path
+            d="M20 30H40M30 20V40M30 30C35.5228 30 40 25.5228 40 20M30 30C24.4772 30 20 34.4772 20 40"
+            stroke="white"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+
+      <div class="input-group">
+        <div class="input-row">
+          <div class="input-field">
+            <label for="amount-from">Amount</label>
+            <input type="number" id="amount-from" placeholder="0.00" />
+          </div>
+          <div class="select-field">
+            <label for="currency-from">From</label>
+            <select id="currency-from">
+              <option value="USD">USD</option>
+              <option value="EUR">EUR</option>
+              <option value="GBP">GBP</option>
+              <option value="JPY">JPY</option>
+              <option value="CAD">CAD</option>
+              <option value="AUD">AUD</option>
+              <option value="CHF">CHF</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="input-row">
+          <div class="input-field">
+            <label for="amount-to">Amount</label>
+            <input type="number" id="amount-to" placeholder="0.00" readonly />
+          </div>
+          <div class="select-field">
+            <label for="currency-to">To</label>
+            <select id="currency-to">
+              <option value="EUR">EUR</option>
+              <option value="USD">USD</option>
+              <option value="GBP">GBP</option>
+              <option value="JPY">JPY</option>
+              <option value="CAD">CAD</option>
+              <option value="AUD">AUD</option>
+              <option value="CHF">CHF</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="result-container">
+        <div class="result-label">Conversion Result</div>
+        <div id="result-value" class="result-value">1 USD = 0.91 EUR</div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
