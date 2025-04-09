@@ -23,7 +23,7 @@ A simple and responsive currency converter built with HTML, CSS, and JavaScript.
 
 ## Preview 🎞️
 
-![Currency Converter](./preview.png)
+![Currency Converter](./image/preview.png)
 
 ---
 
